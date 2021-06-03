@@ -1,0 +1,107 @@
+
+
+<Container>:
+    box_1_1: box_1_1
+    box_1_2: box_1_2
+    box_1_3: box_1_3
+
+    box_2_1: box_2_1
+    box_2_2: box_2_2
+    box_2_3: box_2_3
+
+    box_3_1: box_3_1
+    box_3_2: box_3_2
+    box_3_3: box_3_3
+
+    orientation: 'vertical'
+    padding: 30
+    spacing: 20
+    canvas.before:
+        Color:
+            rgba: (255, 0, 0, 255)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+    GridLayout:
+        cols: 2
+
+        size_hint_y: 0.1
+
+        Label:
+            text: 'Player 1'
+            font_size: 25
+        Label:
+            text: 'Player 2'
+            font_size: 25
+
+    GridLayout:
+        cols: 3
+        rows: 3
+        spacing: 5
+
+        Button:
+            id: box_1_1
+            background_color: (0.2, 0.43, 1, 1)
+            font_size: 75
+
+            on_release:
+                root.select_box('1_1')
+        Button:
+            id: box_1_2
+            background_color: (0.2, 0.43, 1, 1)
+            font_size: 75
+
+            on_release:
+                root.select_box('1_2')
+        Button:
+            id: box_1_3
+            background_color: (0.2, 0.43, 1, 1)
+            font_size: 75
+
+            on_release:
+                root.select_box('1_3')
+
+        Button:
+            id: box_2_1
+            background_color: (0.2, 0.43, 1, 1)
+            font_size: 75
+
+            on_release:
+                root.select_box('2_1')
+        Button:
+            id: box_2_2
+            background_color: (0.2, 0.43, 1, 1)
+            font_size: 75
+
+            on_release:
+                root.select_box('2_2')
+        Button:
+            id: box_2_3
+            background_color: (0.2, 0.43, 1, 1)
+            font_size: 75
+
+            on_release:
+                root.select_box('2_3')
+
+        Button:
+            id: box_3_1
+            background_color: (0.2, 0.43, 1, 1)
+            font_size: 75
+
+            on_release:
+                root.select_box('3_1')
+        Button:
+            id: box_3_2
+            background_color: (0.2, 0.43, 1, 1)
+            font_size: 75
+
+            on_release:
+                root.select_box('3_2')
+        Button:
+            id: box_3_3
+            background_color: (0.2, 0.43, 1, 1)
+            font_size: 75
+
+            on_release:
+                root.select_box('3_3')
